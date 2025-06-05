@@ -21,7 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-host = os.environ.get("HOST", "0.0.0.0")
+host = "0.0.0.0"
 port = int(os.environ.get("PORT", 8080))
 
 @app.get("/get_current_designer")
